@@ -38,6 +38,7 @@ graph TD
     G -->|Threshold > 0.8| H[RIGHT HAND INTENT]
     G -->|Threshold < -0.8| I[LEFT HAND INTENT]
     G -->|Threshold between -0.8 and 0.8| J[RESTING / NOISE]
+```
 ⚙️ Core Engineering Challenges Solved
 The "Null Class" (Resting State) Problem: Standard BCI models force binary predictions even when a patient is resting. This architecture uses the Ridge Classifier's native decision_function() to establish a rigid mathematical confidence threshold (+/- 0.8). If the signal-to-noise ratio drops, the system correctly defaults to a safe "Resting" state.
 
