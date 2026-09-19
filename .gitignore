@@ -1,0 +1,23 @@
+# Python Environment
+myenv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Machine Learning & EEG Data
+*.pkl
+*.fif
+*.edf
+*.csv
+mne_data/
+
+# OS & IDE Files
+.vscode/
+.idea/
+.DS_Store
+
+# PyInstaller Build Artifacts (if you compile to .exe later)
+build/
+dist/
+*.spec
